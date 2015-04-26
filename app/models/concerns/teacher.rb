@@ -80,8 +80,8 @@ module Teacher
       x2.push ele
     end
 
-    x2 = x2.sort_by{|x2| x2[:user].sorting_name}
-    all = x2
+    x2_by_sorting_name = x2.sort_by{|x2| x2[:user].sorting_name}
+    all = x2_by_sorting_name
 
     [all, is_last_page]
   end
